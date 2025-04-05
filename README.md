@@ -1,6 +1,12 @@
 # 🌐 Semantic HTML Tags Reference
 
-Semantic HTML gives meaning to the structure of a web page. It improves accessibility, SEO, and maintainability.
+Semantic HTML Tags Reference is a simple guide showcasing semantic HTML tags with examples to help developers build accessible and well-structured web pages.
+
+---
+## Semantic HTML 
+gives meaning to the structure of a web page. It improves accessibility, SEO, and maintainability.
+
+
 
 ---
 
