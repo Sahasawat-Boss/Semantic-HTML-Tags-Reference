@@ -107,27 +107,83 @@ gives meaning to the structure of a web page. It improves accessibility, SEO, an
 ## ✅ Example Layout
 
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BossBrand - Digital Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
+
+  <!-- Header and Navigation -->
   <header>
     <nav>
-      <!-- navigation links -->
+      <div class="container nav-wrapper">
+        <h1>BossBrand</h1>
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
+  <!-- Main Hero Section -->
   <main>
-    <section>
-      <article>
-        <h2>Blog Post Title</h2>
-        <p>Post content...</p>
-      </article>
+    <section class="hero">
+      <div class="container hero-content">
+        <div>
+          <h2>Crafting Digital Experiences</h2>
+          <p>From concept to code, we transform your vision into responsive, engaging web solutions.</p>
+          <a href="#services" class="btn">Learn More →</a>
+        </div>
+        <figure>
+          <img src="images/hero-image.webp" alt="Team working on digital design" />
+          <figcaption>BossBrand Digital Team</figcaption>
+        </figure>
+      </div>
     </section>
 
-    <aside>
-      <p>Sidebar info, ads, or related links</p>
-    </aside>
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <h3>What We Do</h3>
+        <div class="services">
+          <article>
+            <h4>Web Development</h4>
+            <p>Fast and modern websites built with Next.js, React, or Vue.</p>
+          </article>
+          <article>
+            <h4>UI/UX Design</h4>
+            <p>Clean, user-centered design that’s both functional and beautiful.</p>
+          </article>
+          <article>
+            <h4>API Integration</h4>
+            <p>Secure and scalable backends with Node.js, Express, and PostgreSQL.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h3>About Us</h3>
+        <p>We are passionate developers and designers based in Chiang Mai, delivering creative solutions worldwide.</p>
+      </div>
+    </section>
   </main>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 My Website</p>
+    <div class="container text-center">
+      <p>© 2025 BossBrand. All rights reserved.</p>
+    </div>
   </footer>
+
 </body>
+</html>
